@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* ! PORTFOLIO SECTION START */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+:root {
+  --main-color: #1f1716;
+  --text-color: #f2f5f9;
+  --bg-color: #f9f9ff;
+  /* ! changed */
+  --big-font: 2.6rem;
+  --h2-font: 2.26rem;
+  --p-font: 1.1rem;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.heading {
+  text-align: center;
+}
+
+.portfolio {
+  padding: 5%;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  margin-top: 0 auto;
+}
+
+.box {
+  height: 450px;
+  width: auto;
+  border-radius: 10px;
+  transition: all 0.8s;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.box-one {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png)
+      center center no-repeat;
+  background-size: 650px;
+}
+.box-one:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png)
+      center center no-repeat;
+  background-size: 700px;
+}
+.box-two {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://img.freepik.com/free-photo/teenager-student-girl-isolated-blue-background-posing-with-arms-hip-smiling_231208-14289.jpg?w=2000)
+      center center no-repeat;
+  background-size: 680px;
+}
+.box-two:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://img.freepik.com/free-photo/teenager-student-girl-isolated-blue-background-posing-with-arms-hip-smiling_231208-14289.jpg?w=2000)
+      center center no-repeat;
+  background-size: 720px;
+}
+
+.box-three {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/EDUCMS/tz7n-7vqceaq86dprdnzag.jpg)
+      center center no-repeat;
+  background-size: 800px;
+}
+.box-three:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://content.gallup.com/origin/gallupinc/GallupSpaces/Production/Cms/EDUCMS/tz7n-7vqceaq86dprdnzag.jpg)
+      center center no-repeat;
+  background-size: 850px;
+}
+.box-four {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://www.cfachicago.org/wp-content/uploads/2018/02/college_student.png)
+      center center no-repeat;
+  background-size: 800px;
+}
+.box-four:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://www.cfachicago.org/wp-content/uploads/2018/02/college_student.png)
+      center center no-repeat;
+  background-size: 860px;
+}
+.box-five {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(http://opportunities.org.af/wp-content/uploads/2021/11/portrait-young-student-happy-be-back-university_23-2148586559.jpg)
+      center center no-repeat;
+  background-size: 800px;
+}
+.box-five:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(http://opportunities.org.af/wp-content/uploads/2021/11/portrait-young-student-happy-be-back-university_23-2148586559.jpg)
+      center center no-repeat;
+  background-size: 860px;
+}
+.box-six {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://img.freepik.com/premium-photo/young-blonde-girl-student-smiling-against-university-cute-girl-student-holds-folders-notebooks-hands-learning-education-concept_101969-1058.jpg)
+      center center no-repeat;
+  background-size: 800px;
+}
+.box-six:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(https://img.freepik.com/premium-photo/young-blonde-girl-student-smiling-against-university-cute-girl-student-holds-folders-notebooks-hands-learning-education-concept_101969-1058.jpg)
+      center center no-repeat;
+  background-size: 860px;
+}
+
+.inner {
+  position: absolute;
+  bottom: 45px;
+  left: 35px;
+}
+
+.inner h6 {
+  color: #c6c9d8;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.inner h3 {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.inner button {
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: white;
+  padding: 7px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inner button:hover {
+  background: transparent;
+  border: 2px solid #c6c9d8;
+  transition: 0.4s;
+}
+
+/* ! PORTFOLIO SECTION END */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+input {
+  height: 30px;
+}
+
+.addr-table {
+  margin: 2rem;
+  width: 80%;
+  text-align: left;
+  border-collapse: collapse;
+}
